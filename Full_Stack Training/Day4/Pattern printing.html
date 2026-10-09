@@ -1,0 +1,223 @@
+<!DOCTYPE html><html>
+<head>
+    <title>JavaScript Pattern Programs</title>
+</head>
+<body><h1>JavaScript Pattern Programs </h1><script>
+
+// Q1. Number Staircase
+document.write("<h2>Number Staircase</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+
+// Q2. Reverse Number Staircase
+document.write("<h2>Reverse Number Staircase</h2>");
+
+for (let i = 5; i >= 1; i--) {
+    for (let j = 1; j <= i; j++) {
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+
+// Q3. Alternating Stars and Hash
+document.write("<h2>Alternating Stars and Hash</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        if (i % 2 !== 0) {
+            document.write("* ");
+        } else {
+            document.write("# ");
+        }
+    }
+    document.write("<br>");
+}
+
+
+// Q4. Same Row Number
+document.write("<h2>Same Row Number</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 6 - i; j++) {
+        document.write(i + " ");
+    }
+    document.write("<br>");
+}
+
+
+// Q5. Odd Number Pattern
+document.write("<h2>Odd Number Pattern</h2>");
+
+let num1 = 1;
+
+for (let i = 1; i <= 4; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write(num1 + " ");
+        num1 += 2;
+    }
+    document.write("<br>");
+}
+
+
+// Q6. Even Number Pattern
+document.write("<h2>Even Number Pattern</h2>");
+
+let num2 = 2;
+
+for (let i = 1; i <= 4; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write(num2 + " ");
+        num2 += 2;
+    }
+    document.write("<br>");
+}
+
+
+// Q7. Alternating 0 and 1
+document.write("<h2>Alternating 0 and 1</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        if ((i + j) % 2 === 0) {
+            document.write("1");
+        } else {
+            document.write("0");
+        }
+    }
+    document.write("<br>");
+}
+
+
+// Q8. Alphabet Staircase
+document.write("<h2>Alphabet Staircase</h2>");
+
+let ch = 65;
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write(String.fromCharCode(ch) + " ");
+        ch++;
+    }
+    document.write("<br>");
+}
+
+
+// Q9. Reverse Alphabet
+document.write("<h2>Reverse Alphabet</h2>");
+
+let alphabet = ["E", "D", "C", "B", "A", "Z", "Y", "X", "W", "V"];
+let index = 0;
+
+for (let i = 1; i <= 4; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write(alphabet[index] + " ");
+        index++;
+    }
+    document.write("<br>");
+}
+
+
+// Q10. Border Square
+document.write("<h2>Border Square</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 5; j++) {
+        if (i === 1 || i === 5 || j === 1 || j === 5) {
+            document.write("* ");
+        } else {
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+    }
+    document.write("<br>");
+}
+
+
+// Q11. X Pattern
+document.write("<h2>X Pattern</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 5; j++) {
+        if (j === i || j === 6 - i) {
+            document.write("* ");
+        } else {
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+    }
+    document.write("<br>");
+}
+
+
+// Q12. Plus Pattern
+document.write("<h2>Plus Pattern</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 5; j++) {
+        if (i === 3 || j === 3) {
+            document.write("* ");
+        } else {
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+    }
+    document.write("<br>");
+}
+
+
+// Q13. Checkerboard
+document.write("<h2>Checkerboard</h2>");
+
+for (let i = 1; i <= 4; i++) {
+    for (let j = 1; j <= 4; j++) {
+        if ((i + j) % 2 === 0) {
+            document.write("* ");
+        } else {
+            document.write("# ");
+        }
+    }
+    document.write("<br>");
+}
+
+
+// Q14. Hollow Triangle
+document.write("<h2>Hollow Triangle</h2>");
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        if (j === 1 || j === i || i === 5) {
+            document.write("* ");
+        } else {
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+    }
+    document.write("<br>");
+}
+
+
+// Q15. Number Pyramid
+document.write("<h2>Number Pyramid</h2>");
+
+for (let i = 1; i <= 5; i++) {
+
+    for (let j = 1; j <= 5 - i; j++) {
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for (let j = 1; j <= i; j++) {
+        document.write(j);
+    }
+
+    for (let j = i - 1; j >= 1; j--) {
+        document.write(j);
+    }
+
+    document.write("<br>");
+}
+
+</script></body>
+</html>
